@@ -1,7 +1,6 @@
 import React from 'react';
 import Clock from 'react-live-clock';
 import { getDate } from '../utils';
-import './style.css';
 
 const UI = ({ place, placeName }) => {
   const { year, textDay, textMonth } = getDate();
