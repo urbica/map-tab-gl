@@ -2,8 +2,6 @@ import React from 'react';
 import MapGL from '@urbica/react-map-gl';
 import config from '../config.json';
 
-import 'mapbox-gl/dist/mapbox-gl.css';
-
 const Map = (props) => {
   const {
     changeCoordinates,
