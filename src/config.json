@@ -1,0 +1,4 @@
+{
+  "geocoding": "https://api.mapbox.com/geocoding/v5/mapbox.places",
+  "accessToken": "pk.eyJ1IjoiYm95dXJhcnRlbSIsImEiOiJjajBkeWY4ZmwwMDEyMzJseG8wZDI4YW5pIn0.DBEWyIXo3VknCRDcqa7Msg"
+}

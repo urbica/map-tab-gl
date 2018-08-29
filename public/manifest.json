@@ -1,0 +1,15 @@
+{
+  "manifest_version": 2,
+  "name": "Map",
+  "description": "The most popular movies and TV shows in your   default tab. Includes ratings, summaries and the ability to watch trailers.",
+  "version": "1",
+  "author": "Artem Boyur",
+  "browser_action": {
+    // "default_icon": "tab-icon.png",
+    "default_title": "Map"
+  },
+  "chrome_url_overrides": {
+    "newtab": "index.html"
+  },
+  "permissions": ["activeTab"]
+}
