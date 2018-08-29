@@ -2,6 +2,8 @@
 
 Extension for Chrome
 
+Preview: https://urbica.github.io/map-tab-gl/
+
 ## Installation Extension (dev)
 
     git clone git@github.com:urbica/map-tab-gl.git
