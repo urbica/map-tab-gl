@@ -1,7 +1,7 @@
 import React, { PureComponent, Fragment } from 'react';
 import Map from '../Map/Map';
 import UI from '../UI/UI';
-import stileIds from '../styleIds';
+import stileIds from '../styles';
 import { randomGen } from '../utils';
 import places from '../places.json';
 import config from '../config.json';
@@ -10,7 +10,7 @@ const countPlaces = places.features.length - 1;
 const countStyles = stileIds.length - 1;
 
 const place = places.features[randomGen(countPlaces)];
-const styleId = stileIds[randomGen(countStyles)];
+const styleId = stileIds[randomGen(countStyles)].id;
 const { coordinates } = place.geometry;
 const { zoom } = place.properties;
 

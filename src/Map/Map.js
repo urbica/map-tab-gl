@@ -16,13 +16,13 @@ const Map = (props) => {
     <MapGL
       style={{ width: '100%', height: '100vh' }}
       accessToken={config.accessToken}
-      mapStyle={`mapbox://styles/mapbox/${styleId}-v9`}
+      mapStyle={`mapbox://styles/boyurartem/${styleId}`}
       latitude={coordinates[1]}
       longitude={coordinates[0]}
       zoom={zoom}
       onViewportChange={viewport => {
         const { latitude, longitude, zoom } = viewport;
-        changeCoordinates([longitude, latitude], zoom)
+        changeCoordinates([longitude, latitude], zoom);
       }}
     />
   );
