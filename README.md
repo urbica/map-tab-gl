@@ -1,5 +1,7 @@
 # MapTab-GL
 
+[![Greenkeeper badge](https://badges.greenkeeper.io/urbica/map-tab-gl.svg)](https://greenkeeper.io/)
+
 Extension for Chrome
 
 ## Installation Extension (dev)
