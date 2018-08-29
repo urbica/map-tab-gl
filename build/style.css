@@ -46,8 +46,8 @@ body {
 ------------------------------------------------------- */
 @font-face {
   font-family:'Brandon';
-  src:url('/font/brandon_blk.eot?v1');
-  src:url('/font/brandon_blk.eot?v1#iefix') format('embedded-opentype'),
-  url('/font/brandon_blk.woff?v1') format('woff');
+  src:url('./font/brandon_blk.eot?v1');
+  src:url('./font/brandon_blk.eot?v1#iefix') format('embedded-opentype'),
+  url('./font/brandon_blk.woff?v1') format('woff');
 }
 
