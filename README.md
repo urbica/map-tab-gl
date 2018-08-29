@@ -16,5 +16,5 @@ Extension for Chrome
     git clone git@github.com:urbica/map-tab-gl.git
     cd map-tab-gl
     npm install
-    npm start
-    npm build
+    npm run start
+    npm run build
