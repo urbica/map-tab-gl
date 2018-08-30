@@ -14,31 +14,86 @@ body {
   width: 100%;
   height: 100vh;
   font-family: 'Open Sans', sans-serif;
-  text-shadow: 0px 0px 1px #000, 0px 0px 2px rgba(0, 0, 0, 0.5), 0px 0px 3px rgba(0, 0, 0, 0.25);
-  color: #ffffff;
+  color: #000000;
   text-align: center;
-  pointer-events: none; }
+  pointer-events: none;
+  -webkit-font-smoothing: antialiased;
+}
+
+.white {
+  color: #ffffff;
+}
+
+.white-button {
+  background-color: rgba(0, 0, 0, 0.5);
+  color: #ffffff;
+}
+
+.black-button {
+  background-color: rgba(255, 255, 255, 0.5);
+  color: black;
+}
+
+.white-button:hover { background-color: rgba(0, 0, 0, 0.7); }
+.black-button:hover { background-color: rgba(255, 255, 255, 0.7); }
+
+.style-button {
+  width: 190px;
+  height: 50px;
+  border-radius: 25px;
+  font-size: 20px;
+  font-weight: bold;
+  margin-left: 25px;
+  text-align: center;
+  line-height: 50px;
+  cursor: pointer;
+  pointer-events: auto;
+  text-decoration: none;
+}
 
 .time {
   display: block;
   width: 100%;
-  line-height: 200px;
-  margin-top: 80px;
-  font-size: 160px;
-  letter-spacing: 3px;
+  margin-top: 40px;
+  font-size: 90px;
   text-transform: uppercase;
-  font-family: 'Brandon', sans-serif; }
+  letter-spacing: -0.3px;
+  margin-bottom: 10px;
+}
 
 .text {
   display: block;
   position: absolute;
   bottom: 40px;
-  font-size: 24px;
-  width: 100%; }
+  font-size: 25px;
+  width: 100%;
+  letter-spacing: -0.1px;
+}
+
+.style {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  position: absolute;
+  bottom: 80px;
+  font-size: 36px;
+  width: 100%;
+  letter-spacing: -0.1px;
+  margin-bottom: 10px;
+}
+
+.style-name {
+  font-size: 40px;
+  font-weight: bold;
+}
 
 .textDate {
   width: 100%;
-  font-size: 60px; }
+  font-size: 30px;
+  letter-spacing: -0.1px;
+  margin-top: -10px;
+}
 
 /*# sourceMappingURL=style.css.map */
 
