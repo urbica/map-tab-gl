@@ -22,6 +22,7 @@ body {
 .time {
   display: block;
   width: 100%;
+  line-height: 200px;
   margin-top: 80px;
   font-size: 160px;
   letter-spacing: 3px;

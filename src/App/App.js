@@ -9,16 +9,24 @@ import config from '../config.json';
 const countPlaces = places.features.length - 1;
 const countStyles = stileIds.length - 1;
 
+let styleId = stileIds[randomGen(countStyles)].id;
 const place = places.features[randomGen(countPlaces)];
-const styleId = stileIds[randomGen(countStyles)].id;
 const { coordinates } = place.geometry;
 const { zoom } = place.properties;
+
+const previewStyleId = localStorage.getItem('previewStyleId');
+
+if (previewStyleId === styleId) {
+  styleId = stileIds[randomGen(countStyles)].id;
+}
+
+localStorage.setItem('previewStyleId', styleId);
 
 class App extends PureComponent {
   state = {
     coordinates,
     zoom,
-    placeName: null
+    placeName: place.properties.place_name
   };
 
   changeCoordinates = (coordinates, zoom) => {
@@ -44,10 +52,7 @@ class App extends PureComponent {
           zoom={zoom}
           changeCoordinates={this.changeCoordinates}
         />
-        <UI
-          place={place}
-          placeName={placeName}
-        />
+        <UI placeName={placeName} />
       </Fragment>
     );
   }
