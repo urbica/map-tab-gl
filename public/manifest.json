@@ -6,10 +6,5 @@
   "author": "Artem Boyur",
   "browser_action": {
     "default_title": "MapTab"
-  },
-  "app": {
-    "background": {
-      "scripts": ["background.js"]
-    }
   }
 }
