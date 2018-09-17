@@ -6,5 +6,9 @@
   "author": "Artem Boyur",
   "browser_action": {
     "default_title": "MapTab"
-  }
+  },
+  "chrome_url_overrides": {
+    "newtab": "index.html"
+  },
+  "permissions": ["activeTab"]
 }
